@@ -13,8 +13,8 @@ TagManager:
   - Water
   - UI
   - NPC
-  - 
-  - 
+  - Background
+  - IDK
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2544111217
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
