@@ -5,11 +5,10 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public GameObject player; // Reference na hráèe
-    public GameObject area; // Reference na objekt oblasti, ve které se hráè mùže pohybovat
+    public EdgeCollider2D edgeCollider; // EdgeCollider2D oblasti, ve které se hráè mùže pohybovat
 
     private Vector3 offset; // Odsazení kamery od hráèe
     private Collider2D playerCollider; // Collider hráèe
-    private Collider2D areaCollider; // Collider oblasti
 
     void Start()
     {
@@ -30,37 +29,34 @@ public class FollowPlayer : MonoBehaviour
             Debug.LogError("Hráè není pøiøazen!");
         }
 
-        if (area != null)
+        if (edgeCollider == null)
         {
-            // Získá Collider2D z oblasti
-            areaCollider = area.GetComponent<Collider2D>();
-            if (areaCollider == null)
-            {
-                Debug.LogError("Chybí Collider2D na objektu oblasti!");
-            }
-        }
-        else
-        {
-            Debug.LogError("Objekt oblasti není pøiøazen!");
+            Debug.LogError("EdgeCollider není pøiøazen!");
         }
     }
 
     void LateUpdate()
     {
-        if (player != null && playerCollider != null && area != null && areaCollider != null)
+        if (player != null && playerCollider != null && edgeCollider != null)
         {
             // Nastaví pozici kamery tak, aby byla následována hráèem s offsetem
             Vector3 targetPosition = player.transform.position + offset;
 
-            // Omezení pozice kamery tak, aby zùstala uvnitø okrajù oblasti
-            Vector3 clampedPosition = new Vector3(
-                Mathf.Clamp(targetPosition.x, areaCollider.bounds.min.x, areaCollider.bounds.max.x),
-                Mathf.Clamp(targetPosition.y, areaCollider.bounds.min.y, areaCollider.bounds.max.y),
-                transform.position.z // Zachovává stávající z pozice z
-            );
+            // Získání rozmìrù oblasti, ve které se mùže hráè pohybovat
+            float areaWidth = edgeCollider.bounds.size.x;
+            float areaHeight = edgeCollider.bounds.size.y;
+
+            // Získání rozmìrù kamery
+            float cameraHeight = Camera.main.orthographicSize * 2;
+            float cameraWidth = cameraHeight * Camera.main.aspect;
+
+            // Omezení pozice hráèe tak, aby zùstal ve støedu oblasti
+            float clampedX = Mathf.Clamp(targetPosition.x, edgeCollider.bounds.min.x + cameraWidth / 2, edgeCollider.bounds.max.x - cameraWidth / 2);
+            float clampedY = Mathf.Clamp(targetPosition.y, edgeCollider.bounds.min.y + cameraHeight / 2, edgeCollider.bounds.max.y - cameraHeight / 2);
 
             // Aktualizace pozice kamery
-            transform.position = clampedPosition;
+            transform.position = new Vector3(clampedX, clampedY, transform.position.z);
         }
     }
 }
+
