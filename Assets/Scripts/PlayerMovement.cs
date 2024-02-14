@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController2D controller;
+    public Rigidbody2D rb;
     public Animator animator;
 
     public float runSpeed = 40f;
     float horizontalMove = 0f;
-    
-    // Update is called once per frame
+    float verticalMove = 0f;
+
+    private Vector2 moveDirection;
+
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
+
+        moveDirection = new Vector2(horizontalMove, verticalMove);  
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove + verticalMove));
     }
 
     public void Stop()
@@ -30,6 +35,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //Moving our character
-        controller.Move(horizontalMove * Time.fixedDeltaTime);
+        rb.velocity = new Vector2(moveDirection.x * runSpeed, moveDirection.y * runSpeed);
     }
 }
