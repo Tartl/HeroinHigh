@@ -815,11 +815,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1730030710}
-<<<<<<< Updated upstream
   runSpeed: 2.5
-=======
-  runSpeed: 2
->>>>>>> Stashed changes
+
 --- !u!50 &1730030710
 Rigidbody2D:
   serializedVersion: 4
