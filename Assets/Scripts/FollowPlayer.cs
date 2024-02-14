@@ -9,18 +9,10 @@ public class FollowPlayer : MonoBehaviour
 
     private Vector3 offset; // Odsazení kamery od hráèe
     private Collider2D playerCollider; // Collider hráèe
+    private Collider2D areaCollider; // Collider oblasti
 
     void Start()
     {
-        // Získejte referenci na hráèùv herní objekt
-        GameObject playerObject = GameObject.Find("Player");
-
-        // Pøidejte BoxCollider2D, pokud hráè nemá Collider2D
-        if (playerObject != null && playerObject.GetComponent<Collider2D>() == null)
-        {
-            playerObject.AddComponent<BoxCollider2D>();
-        }
-
         if (player != null)
         {
             // Vypoèítá offset kamery od hráèe
@@ -28,7 +20,6 @@ public class FollowPlayer : MonoBehaviour
 
             // Získá Collider2D z hráèe
             playerCollider = player.GetComponent<Collider2D>();
-
             if (playerCollider == null)
             {
                 Debug.LogError("Chybí Collider2D na hráèi!");
@@ -36,28 +27,40 @@ public class FollowPlayer : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Chybí hráè!");
+            Debug.LogError("Hráè není pøiøazen!");
+        }
+
+        if (area != null)
+        {
+            // Získá Collider2D z oblasti
+            areaCollider = area.GetComponent<Collider2D>();
+            if (areaCollider == null)
+            {
+                Debug.LogError("Chybí Collider2D na objektu oblasti!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Objekt oblasti není pøiøazen!");
         }
     }
 
     void LateUpdate()
     {
-        if (player != null && playerCollider != null)
+        if (player != null && playerCollider != null && area != null && areaCollider != null)
         {
             // Nastaví pozici kamery tak, aby byla následována hráèem s offsetem
             Vector3 targetPosition = player.transform.position + offset;
 
-            // Získá rozmìry kamery
-            float cameraHeight = 2f * Camera.main.orthographicSize;
-            float cameraWidth = cameraHeight * Camera.main.aspect;
-
-            // Omezení pozice hráèe tak, aby zùstal uprostøed obrazovky
-            float clampedX = Mathf.Clamp(targetPosition.x, transform.position.x - cameraWidth / 2f, transform.position.x + cameraWidth / 2f);
-            float clampedY = Mathf.Clamp(targetPosition.y, transform.position.y - cameraHeight / 2f, transform.position.y + cameraHeight / 2f);
-            targetPosition = new Vector3(clampedX, clampedY, targetPosition.z);
+            // Omezení pozice kamery tak, aby zùstala uvnitø okrajù oblasti
+            Vector3 clampedPosition = new Vector3(
+                Mathf.Clamp(targetPosition.x, areaCollider.bounds.min.x, areaCollider.bounds.max.x),
+                Mathf.Clamp(targetPosition.y, areaCollider.bounds.min.y, areaCollider.bounds.max.y),
+                transform.position.z // Zachovává stávající z pozice z
+            );
 
             // Aktualizace pozice kamery
-            transform.position = targetPosition;
+            transform.position = clampedPosition;
         }
     }
 }
