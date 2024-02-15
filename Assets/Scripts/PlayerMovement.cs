@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     float verticalMove = 0f;
 
     private Vector2 moveDirection;
+    private bool m_FacingRight = true;
 
     void Update()
     {
@@ -32,6 +33,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (moveDirection.x < 0 && !m_FacingRight)
+        {
+            // ... flip the player.
+            Flip();
+        }
+        // Otherwise if the input is moving the player left and the player is facing right...
+        else if (moveDirection.x > 0 && m_FacingRight)
+        {
+            // ... flip the player.
+            Flip();
+        }
         rb.velocity = new Vector2(moveDirection.x * runSpeed, moveDirection.y * runSpeed);
+    }
+    private void Flip()
+    {
+        m_FacingRight = !m_FacingRight;
+
+        transform.Rotate(0f, 180, 0f);
     }
 }

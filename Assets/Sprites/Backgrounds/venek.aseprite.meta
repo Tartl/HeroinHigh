@@ -73,7 +73,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -86,7 +86,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638430806411905323
+  platformSettingsDirtyTick: 638436194833682808
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: venek
+  - name: Base
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 1920
       height: 1080
-    spriteID: 2d7d048344b576140b338cdc6f8619bb
+    spriteID: 62a66dca29b0ac043abbe5b6e16d2d0f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,23 +141,134 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Windows
+    originalName: 
+    pivot: {x: 0.4893617, y: -3.3963964}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1632
+      width: 1880
+      height: 222
+    spriteID: df0a253d72a149141bed96287d3c5382
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1632}
+  - name: Doors
+    originalName: 
+    pivot: {x: -0.54081625, y: -5.469231}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1892
+      y: 1632
+      width: 98
+      height: 130
+    spriteID: bcad3032bece6a941a81ac9fc9141b94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1892, y: 1632}
+  - name: Props
+    originalName: 
+    pivot: {x: 0.3221194, y: -0.32706767}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1189
+      height: 532
+    spriteID: 771454634e93d344a8f2f2f59f09e23d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1817400163
-    name: venek
-    layerFlags: 0
+    guid: 885305061
+    name: Base
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: venek
+    - name: Base
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 1920
         height: 1080
-      spriteId: 2d7d048344b576140b338cdc6f8619bb
+      spriteId: 62a66dca29b0ac043abbe5b6e16d2d0f
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: 1976637342
+    name: Windows
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Windows
+      frameIndex: 0
+      cellRect:
+        x: 40
+        y: 754
+        width: 1880
+        height: 222
+      spriteId: df0a253d72a149141bed96287d3c5382
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: -453143885
+    name: Doors
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Doors
+      frameIndex: 0
+      cellRect:
+        x: 1013
+        y: 711
+        width: 98
+        height: 130
+      spriteId: bcad3032bece6a941a81ac9fc9141b94
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 3
+    guid: 745066335
+    name: Props
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Props
+      frameIndex: 0
+      cellRect:
+        x: 577
+        y: 174
+        width: 1189
+        height: 532
+      spriteId: 771454634e93d344a8f2f2f59f09e23d
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -186,6 +297,18 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
     overridden: 0
     ignorePlatformSupport: 0
     maxTextureSize: 2048
