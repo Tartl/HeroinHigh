@@ -1,24 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
 
-    public float runSpeed = 2f;
-    float horizontalMove = 0f;
-    float verticalMove = 0f;
-
+    public float runSpeed = 2.5f;
     private Vector2 moveDirection;
     private bool m_FacingRight = true;
 
+    public PlayerControls playerControls;
+    private InputAction move;
+    private InputAction interact;
+    private void Awake()
+    {
+        playerControls = new PlayerControls();
+    }
+    private void OnEnable()
+    {
+        move = playerControls.Player.Move;
+        move.Enable();
+
+        interact = playerControls.Player.Interact;
+        interact.Enable();
+
+    }
+    private void OnDisable()
+    {
+        move.Disable();
+        interact.Disable();
+    }
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
-
-        moveDirection = new Vector2(horizontalMove * Time.fixedDeltaTime, verticalMove * Time.fixedDeltaTime).normalized;
+        moveDirection = move.ReadValue<Vector2>();
     }
 
     public void Stop()
@@ -51,5 +67,9 @@ public class PlayerMovement : MonoBehaviour
         m_FacingRight = !m_FacingRight;
 
         transform.Rotate(0f, 180, 0f);
+    }
+    private void Interact(InputAction.CallbackContext context)
+    {
+        Debug.Log("Interakce");
     }
 }
