@@ -49,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
         if (moveDirection.x < 0 && !m_FacingRight)
         {
             // ... flip the player.
@@ -68,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(0f, 180, 0f);
     }
-    private void Interact(InputAction.CallbackContext context)
+    public void Interact(InputAction.CallbackContext context)
     {
         Debug.Log("Interakce");
     }
