@@ -1,6 +1,8 @@
 INCLUDE globals.ink
-{adamQuestAccept:->accepted | ->main}
-Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím...
+{adamPrvni:Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím...}
+~adamPrvni=false
+{adamQuestAccept:->accepted|->main}
+
 === main ===
 Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech
     *[Ok, zkusim ti je sehnat]
@@ -18,4 +20,5 @@ Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech
 Tak co, už máš ty štípačky?
 {adamQuestComplete:*[Jo, mám]}
 *[Ještě ne]
+...
 ->END
