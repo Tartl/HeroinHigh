@@ -10,7 +10,6 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
     Tak s tím ti můžu pomoct, když mi najdeš kýbl, dám ti štípačky.
     **[OK, zkusim ti sehnat kýbl]
     Dík
-    ~adamQuestComplete = true
     ->END
 *[Co tě to zajímá?]
     Nebuď hned tak agresivní ne?

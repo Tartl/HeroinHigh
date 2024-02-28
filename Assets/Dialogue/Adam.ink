@@ -1,6 +1,6 @@
 INCLUDE globals.ink
-Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím...
 {adamQuestAccept:->accepted | ->main}
+Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím...
 === main ===
 Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech
     *[Ok, zkusim ti je sehnat]

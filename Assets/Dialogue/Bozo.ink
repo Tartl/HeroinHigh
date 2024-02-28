@@ -1,6 +1,8 @@
 INCLUDE globals.ink
-{random()}
+{borekHlasky>50:... |{random()}}
+
 == function random ==
+~borekHlasky++
 {shuffle:
  - ~ return "Dej si čaj s citrónem"
  - ~ return "FIFO FIFO"
@@ -9,5 +11,4 @@ INCLUDE globals.ink
  - ~ return "Povidla pitý vodově"
  - ~ return "Niggaballs"
  - ~ return "HEHHEEHEHHE"
- - ~ return "těhotná učitelka? SMASH!"
 }
