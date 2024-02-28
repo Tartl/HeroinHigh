@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerControls playerControls;
     private InputAction move;
-    private InputAction interact;
     private void Awake()
     {
         playerControls = new PlayerControls();
@@ -22,34 +21,19 @@ public class PlayerMovement : MonoBehaviour
     {
         move = playerControls.Player.Move;
         move.Enable();
-
-        interact = playerControls.Player.Interact;
-        interact.Enable();
-
     }
     private void OnDisable()
     {
         move.Disable();
-        interact.Disable();
     }
     void Update()
     {
         moveDirection = move.ReadValue<Vector2>();
     }
 
-    public void Stop()
-    {
-        GetComponent<PlayerMovement>().runSpeed = 0f;
-    }
-
-    public void Go()
-    {
-        GetComponent<PlayerMovement>().runSpeed = 25f;
-    }
-
     private void FixedUpdate()
     {
-        if(DialogueManager.GetInstance().dialogueIsPlaying)
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
             return;
         }
@@ -71,9 +55,5 @@ public class PlayerMovement : MonoBehaviour
         m_FacingRight = !m_FacingRight;
 
         transform.Rotate(0f, 180, 0f);
-    }
-    public void Interact(InputAction.CallbackContext context)
-    {
-        Debug.Log("Interakce");
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger : MonoBehaviour 
 {
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
@@ -11,6 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    public Rigidbody2D rb;
     private bool playerInRange;
 
     private void Awake()
@@ -26,11 +27,15 @@ public class DialogueTrigger : MonoBehaviour
             visualCue.SetActive(true);
             if(InputManager.GetInstance().GetInteractPressed())
             {
+                rb.velocity = Vector2.zero;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             }
         }  
         else
+        {
             visualCue.SetActive(false);
+        }
+            
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
