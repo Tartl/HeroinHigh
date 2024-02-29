@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Animator animator;
 
     public float runSpeed = 2.5f;
     private Vector2 moveDirection;
@@ -48,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
             // ... flip the player.
             Flip();
         }
+        animator.SetFloat("Speed",Math.Abs(moveDirection.x));
         rb.velocity = new Vector2(moveDirection.x * runSpeed, moveDirection.y * runSpeed);
     }
     private void Flip()

@@ -535,7 +535,7 @@ MonoBehaviour:
   m_text: "-\tV t\xE9to h\u0159e jde o to, \u017Ee hlavn\xED postava Bul\xE1nek se
     sna\u017E\xED naj\xEDt svoje vlasy. \n-\tTohoto \xFAkolu doc\xEDl\xED t\xEDm,
     \u017Ee bude plnit mise od vedlej\u0161\xEDch postav\n-\tJak\xE1koliv podobnost
-    s realn\xFDch sv\u011Btem \u010Di jinou hrou je \u010Dist\u011B n\xE1hodn\xE1."
+    s realn\xFDm sv\u011Btem \u010Di jinou hrou je \u010Dist\u011B n\xE1hodn\xE1."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
