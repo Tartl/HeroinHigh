@@ -1,14 +1,22 @@
 INCLUDE globals.ink
+{adamQuestComplete:
+Nemluv na mně, někdo mi kazí byznys
+ - else:
 {domiQuestAccept:->accepted}
-{adamQuestAccept:->adam_accepted}
-Stočil bych kýbl...Nemáš náhodou?
-{domiQuestComplete:->domi_complete}
-*[Nemám]
-    Tak to běž radši za cigánem.
-    ->END
-*[Jdu pryč]
+{adamQuestAccept:
+    ->adam_accepted
+  - else:
+  {domiQuestComplete:->domi_complete}
+    Stočil bych kýbl...Nemáš náhodou?
+    *[Nemám]
+        Tak to běž radši za cigánem.
+        ->END
+    *[Jdu pryč]
         Příště neplýtvej mým časem.
         ->END
+}
+}
+
 === adam_accepted ===
 Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
 *[Jo, chtěl po mně štípačky]
@@ -16,7 +24,21 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
     **[OK, zkusim ti sehnat kýbl]
     Dík.
     ~domiQuestAccept = true
+     ->END
+   {domiQuestComplete:
+    **[Už mám kýbl]
+        Fakt? dej mi ho
+        ***[Ok]
+        ~adamQuestComplete = true
+        ->END
+        ***[Ne]
+        Zmrde
+        ->END
     ->END
+  - else:
+    Otherwise this is written.
+}
+
 *[Co tě to zajímá?]
     Nebuď hned tak agresivní ne?
     **[Promiň]
@@ -25,9 +47,10 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
     Příště neplýtvej můj čas.
     ->END
 === domi_complete ===
+Stočil bych kýbl...Nemáš náhodou?
 *[Mám]
     Fakt dík moc! Tady máš ty štípačky.
-    **[(Vzít si štípačky a odejít)]
+    ~adamQuestComplete=true
         ->END
 *[Nemám]
     Tak to běž radši za cigánem.
@@ -37,7 +60,19 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
     ->END
 === accepted ===
 Tak co, už máš ten kýbl?
-{domiQuestComplete:*[Jo, mám]}
-*[Ještě ne]
-Za chvilku začne hodina, tak dělej!
-->END
+{domiQuestComplete:
+    *[Jo, mám]
+    ~adamQuestComplete=true
+    Fakt dik, tady máš ty štípačky
+    ->END
+    *[Ještě ne]
+    Za chvilku začne hodina, tak dělej!
+    ->END
+  - else:
+  *[Ještě ne]
+    Za chvilku začne hodina, tak dělej!
+    ->END
+    
+}
+
+
