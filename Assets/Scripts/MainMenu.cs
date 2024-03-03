@@ -13,23 +13,5 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
-
-
-    public AudioMixer MainMixer;
-
-    void Start()
-    {
-        SetVolumeToMinimum();
-    }
-
-    void SetVolumeToMinimum()
-    {
-        if (MainMixer != null)
-        {
-            float minVolume = -80f; // Nejnižší hodnota hlasitosti
-            MainMixer.SetFloat("volume", minVolume);
-        }
-        
-    }
 }
 

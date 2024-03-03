@@ -3,10 +3,10 @@ INCLUDE globals.ink
 *[Co meleš]
     los pičos
 *[Dal bych si okurku]
-Puta
+Un cucumbero
 *[Tož nazdar]
 Vamos Vamos
-*[Mluv česky, jsi v česku tak mluv česky!!!!!!]
+*[Jsi v česku tak mluv česky!!!!!!]
 Habla espanol perra
 
 == function random ==
