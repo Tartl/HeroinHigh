@@ -49,7 +49,7 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
 === domi_complete ===
 Stočil bych kýbl...Nemáš náhodou?
 *[Mám]
-    Fakt dík moc! Tady máš ty štípačky.
+    Fakt dík moc! Tady máš štípačky.
     ~adamQuestComplete=true
         ->END
 *[Nemám]
@@ -63,7 +63,7 @@ Tak co, už máš ten kýbl?
 {domiQuestComplete:
     *[Jo, mám]
     ~adamQuestComplete=true
-    Fakt dik, tady máš ty štípačky
+    Fakt dik, tady máš štípačky
     ->END
     *[Ještě ne]
     Za chvilku začne hodina, tak dělej!

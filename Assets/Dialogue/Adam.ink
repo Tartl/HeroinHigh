@@ -1,5 +1,10 @@
 INCLUDE globals.ink
+{venekComplete:
+Už sem ti řek všechno co vim!
+    ->END
+}
 {adamQuestComplete:
+{adamQuestAccept:->accepted}
 To sou štipačky, co máš u sebe?
 *[Jo, proč]
 ->naval_stipacky
@@ -22,11 +27,11 @@ Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech
         ->END
     *[A k čemu je potřebuješ?]
         Nějakej gadžo mi dal na skříňku svůj zámek a já se do ní teď nedostanu
-        **[Tak to ti pomůžu]
-        Dik more
-        ~adamQuestAccept = true
-        ->END
-        **[Bohužel ti nepomůžu]
+        **[Proč nejdeš za školníkem?]
+            Dneska prej neni ve škole
+            ->main
+        **[Ajo]
+        Takže tak more
         ->END
     *[Jdu pryč]
         Gadžo proč na mě vůbec mluvíš?!
@@ -36,7 +41,7 @@ Tak co, už máš ty štípačky?
 {adamQuestComplete:
     *[Jo, mám]
        ->naval_stipacky
-    **[Vyhul mi prdel]
+    *[Vyhul mi prdel]
     Cos řek?!
     ->END
   - else:
@@ -48,6 +53,7 @@ Tak co, už máš ty štípačky?
  Naval more
         **[Ok]
             Dik gadžo, konečně můžu čornout to kolo
+            ~venekComplete = true
             ***[COŽE]
                 Ale nic, můžeš jít..
                 Vlastně počkej, slyšel sem, že hledáš vlasy. Myslim, že byli u Batemana ve skříňce

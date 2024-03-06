@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
+            animator.SetFloat("Speed", 0);
             return;
         }
         if (moveDirection.x < 0 && !m_FacingRight)
