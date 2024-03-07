@@ -1,26 +1,24 @@
 INCLUDE globals.ink
 {venekComplete:
-Už sem ti řek všechno co vim!
+Už sem ti řek všechno co vim! #speaker:Adam #portrait:adam_icon #layout:right
     ->END
 }
 {adamQuestComplete:
-{adamQuestAccept:->accepted}
-To sou štipačky, co máš u sebe?
-*[Jo, proč]
-->naval_stipacky
-    **[Ne]
-    Achjo
+    {adamQuestAccept:->accepted}
+    To sou štipačky, co máš u sebe? #speaker:Adam #portrait:adam_icon #layout:right
+    *[Jo, proč]
+    ->naval_stipacky
+    *[Ne?]
     ->END
-*[Ne?]
-->END
-  - else:
-    {adamPrvni:Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím...}
+  - else: 
+    {adamPrvni:
+    Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím... #speaker:Adam #portrait:adam_icon #layout:right
+    }
     ~adamPrvni=false
     {adamQuestAccept:->accepted|->main}
 }
-
 === main ===
-Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech
+Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech #speaker:Adam #portrait:adam_icon #layout:right
     *[Ok, zkusim ti je sehnat]
         Dík more
         ~adamQuestAccept = true
@@ -37,7 +35,7 @@ Když mi seženeš štípačky, řeknu ti kdo ví něco o tvejch vlasech
         Gadžo proč na mě vůbec mluvíš?!
         ->END
 === accepted ===
-Tak co, už máš ty štípačky?
+Tak co, už máš ty štípačky? #speaker:Adam #portrait:adam_icon #layout:right
 {adamQuestComplete:
     *[Jo, mám]
        ->naval_stipacky
@@ -50,11 +48,12 @@ Tak co, už máš ty štípačky?
     ->END
 }
 === naval_stipacky===
- Naval more
+ Naval more 
         **[Ok]
             Dik gadžo, konečně můžu čornout to kolo
             ~venekComplete = true
             ***[COŽE]
                 Ale nic, můžeš jít..
                 Vlastně počkej, slyšel sem, že hledáš vlasy. Myslim, že byli u Batemana ve skříňce
+                #end:true
                 ->END

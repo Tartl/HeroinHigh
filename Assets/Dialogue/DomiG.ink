@@ -1,13 +1,13 @@
 INCLUDE globals.ink
 {adamQuestComplete:
-Nemluv na mně, někdo mi kazí byznys
+Nemluv na mně, někdo mi kazí byznys #speaker:DomiG #portrait:domiG_icon #layout:left
  - else:
 {domiQuestAccept:->accepted}
 {adamQuestAccept:
     ->adam_accepted
   - else:
   {domiQuestComplete:->domi_complete}
-    Stočil bych kýbl...Nemáš náhodou?
+    Stočil bych kýbl...Nemáš náhodou?#speaker:DomiG #portrait:domiG_icon #layout:left
     *[Nemám]
         Tak to běž radši za cigánem.
         ->END
@@ -18,25 +18,25 @@ Nemluv na mně, někdo mi kazí byznys
 }
 
 === adam_accepted ===
-Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
+Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?#speaker:DomiG #portrait:domiG_icon #layout:left
 *[Jo, chtěl po mně štípačky]
+   {domiQuestComplete:
+   Tak s tím ti můžu pomoct, když mi najdeš kýbl, dám ti štípačky.
+    **[Už mám kýbl]
+        Fakt? dej mi ho
+        ***[Ok]
+        ~adamQuestComplete = true
+        Dik moc
+        ->END
+        ***[Ne]
+        Zmrde
+        ->END
+  - else:
     Tak s tím ti můžu pomoct, když mi najdeš kýbl, dám ti štípačky.
     **[OK, zkusim ti sehnat kýbl]
     Dík.
     ~domiQuestAccept = true
      ->END
-   {domiQuestComplete:
-    **[Už mám kýbl]
-        Fakt? dej mi ho
-        ***[Ok]
-        ~adamQuestComplete = true
-        ->END
-        ***[Ne]
-        Zmrde
-        ->END
-    ->END
-  - else:
-    Otherwise this is written.
 }
 
 *[Co tě to zajímá?]
@@ -47,7 +47,7 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?
     Příště neplýtvej můj čas.
     ->END
 === domi_complete ===
-Stočil bych kýbl...Nemáš náhodou?
+Stočil bych kýbl...Nemáš náhodou?#speaker:DomiG #portrait:domiG_icon #layout:left
 *[Mám]
     Fakt dík moc! Tady máš štípačky.
     ~adamQuestComplete=true
@@ -59,7 +59,7 @@ Stočil bych kýbl...Nemáš náhodou?
     Příště neplýtvej můj čas.
     ->END
 === accepted ===
-Tak co, už máš ten kýbl?
+Tak co, už máš ten kýbl?#speaker:DomiG #portrait:domiG_icon #layout:left
 {domiQuestComplete:
     *[Jo, mám]
     ~adamQuestComplete=true

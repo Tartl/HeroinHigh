@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
-    public float runSpeed = 2.5f;
+    public float runSpeed = 2f;
     private Vector2 moveDirection;
     private bool m_FacingRight = true;
 

@@ -10,6 +10,7 @@ Vamos Vamos
 Habla espanol perra
 
 == function random ==
+#speaker:Sanchez #portrait:sanchez_icon #layout:left
 {shuffle:
  - ~ return "hola"
  - ~ return "receta de tacos como de tabla de contenidos hoy les eneno como hacker tacox mexicanos, un clasico de la gastronomia munidial! Haciendo "

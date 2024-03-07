@@ -1725,8 +1725,8 @@ Transform:
   m_GameObject: {fileID: 514304695}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.983704, y: 74.75757, z: -4.7887735}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 57, y: 86, z: -4.7887735}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1328424586}
@@ -2575,7 +2575,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 24.983704, y: 74.75757, z: -4.7887735}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 812681339}
@@ -3274,7 +3274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5384c12aa8628f4a9b064a7264d1f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMixer: {fileID: 24100000, guid: da6399bc209026d48811aeec26e1fe8f, type: 2}
 --- !u!1 &1066371370
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,8 +3612,8 @@ Transform:
   m_GameObject: {fileID: 1097546829}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.983704, y: 74.75757, z: -4.7887735}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 22, y: 160, z: -4.7887735}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1505046267}
@@ -3639,7 +3638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5384c12aa8628f4a9b064a7264d1f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMixer: {fileID: 24100000, guid: da6399bc209026d48811aeec26e1fe8f, type: 2}
 --- !u!1 &1128013314
 GameObject:
   m_ObjectHideFlags: 0
@@ -4224,7 +4222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOW
+  m_text: "NEJMEN\u0160\xCD"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
