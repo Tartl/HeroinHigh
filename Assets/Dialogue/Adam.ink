@@ -55,5 +55,4 @@ Tak co, už máš ty štípačky? #speaker:Adam #portrait:adam_icon #layout:righ
             ***[COŽE]
                 Ale nic, můžeš jít..
                 Vlastně počkej, slyšel sem, že hledáš vlasy. Myslim, že byli u Batemana ve skříňce
-                #end:true
                 ->END

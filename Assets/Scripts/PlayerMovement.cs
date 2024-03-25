@@ -37,7 +37,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            animator.SetFloat("Speed", 0);
+            animator.SetFloat("SpeedX", 0);
+            animator.SetBool("MovingUp",false);
             return;
         }
         if (moveDirection.x < 0 && !m_FacingRight)
@@ -51,7 +52,23 @@ public class PlayerMovement : MonoBehaviour
             // ... flip the player.
             Flip();
         }
-        animator.SetFloat("Speed",Math.Abs(moveDirection.x));
+        if(moveDirection.y > 0 && moveDirection.x == 0)
+        {
+            animator.SetBool("MovingUp",true);
+        }
+        else
+        {
+            animator.SetBool("MovingUp",false);
+        }
+        if(moveDirection.y < 0 && moveDirection.x == 0)
+        {
+            animator.SetBool("MovingDown",true);
+        }
+        else
+        {
+            animator.SetBool("MovingDown",false);
+        }
+        animator.SetFloat("SpeedX",Math.Abs(moveDirection.x));
         rb.velocity = new Vector2(moveDirection.x * runSpeed, moveDirection.y * runSpeed);
     }
     private void Flip()

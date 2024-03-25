@@ -126,14 +126,14 @@ public class DialogueManager : MonoBehaviour
             }
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
-
+            
             switch (tagKey)
             {
                 case SPEAKER_TAG:
                     displayNameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
-                    portraitAnimator.Play(tagValue);
+                    portraitAnimator.Play(tagValue);              
                     break;
                 case LAYOUT_TAG:
                     layoutAnimator.Play(tagValue);
@@ -141,7 +141,7 @@ public class DialogueManager : MonoBehaviour
                 case END_TAG:
                     if (tagValue == "true")
                     {
-                        SceneManager.LoadScene("EndScreen");
+                        SceneManager.LoadScene("Level 2");
                     }
                     break;
                 default:

@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 {adamQuestComplete:
-Nemluv na mně, někdo mi kazí byznys #speaker:DomiG #portrait:domiG_icon #layout:left
+Nemluv na mně, někdo mi kazí byznys #speaker:DomiG #portrait:domiG_iconvyhul #layout:left
  - else:
 {domiQuestAccept:->accepted}
 {adamQuestAccept:
@@ -26,7 +26,7 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?#speaker:
         Fakt? dej mi ho
         ***[Ok]
         ~adamQuestComplete = true
-        Dik moc
+        Dik moc#speaker:DomiG #portrait:domiG_iconvyhul #layout:left
         ->END
         ***[Ne]
         Zmrde
@@ -49,7 +49,7 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?#speaker:
 === domi_complete ===
 Stočil bych kýbl...Nemáš náhodou?#speaker:DomiG #portrait:domiG_icon #layout:left
 *[Mám]
-    Fakt dík moc! Tady máš štípačky.
+    Fakt dík moc! Tady máš štípačky.#speaker:DomiG #portrait:domiG_iconvyhul #layout:left
     ~adamQuestComplete=true
         ->END
 *[Nemám]
@@ -63,7 +63,7 @@ Tak co, už máš ten kýbl?#speaker:DomiG #portrait:domiG_icon #layout:left
 {domiQuestComplete:
     *[Jo, mám]
     ~adamQuestComplete=true
-    Fakt dik, tady máš štípačky
+    Fakt dik, tady máš štípačky#speaker:DomiG #portrait:domiG_iconvyhul #layout:left
     ->END
     *[Ještě ne]
     Za chvilku začne hodina, tak dělej!
