@@ -1,0 +1,2 @@
+VAR stipacky_quest=false
+VAR stipacky_complete=false

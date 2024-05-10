@@ -1423,7 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1180258753}
-  inkJSON: {fileID: 4900000, guid: 52d0ffd9913ec0f44a885169c0a6c518, type: 3}
+  inkJSON: {fileID: 4900000, guid: d79ecdb416249454ab8d8904a8ab3daf, type: 3}
   rb: {fileID: 1730030710}
 --- !u!58 &392050705
 CircleCollider2D:

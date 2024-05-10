@@ -1089,7 +1089,7 @@ Transform:
   m_GameObject: {fileID: 492099208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 4.27, z: 4.4593678}
+  m_LocalPosition: {x: -0.25, y: 3.52, z: 4.4593678}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2182,7 +2182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 619803842}
-  inkJSON: {fileID: 4900000, guid: 5977006bca79be14894da11b0a1399e4, type: 3}
+  inkJSON: {fileID: 4900000, guid: 66443bdcfc9753b4ab219ea6cb36c130, type: 3}
   rb: {fileID: 1730030710}
 --- !u!1 &1103511080
 GameObject:
@@ -3691,7 +3691,7 @@ Transform:
   m_GameObject: {fileID: 1603895319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.91, y: 3.76, z: 4.4593678}
+  m_LocalPosition: {x: -5.93, y: 3.08, z: 4.4593678}
   m_LocalScale: {x: 3.8060133, y: 3.4622197, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

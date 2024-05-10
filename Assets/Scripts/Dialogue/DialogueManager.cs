@@ -11,6 +11,9 @@ using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Params")]
+    [SerializeField] private float typingSpeed = 0.04f;
+
     [Header("Load Globals JSON")]
     [SerializeField] private TextAsset loadGlobalsJSON;
 
@@ -27,7 +30,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    private Coroutine displayLineCoroutine;
+
     private Story currentStory;
+
+    private bool canContinueToNextLine = false;
     public bool dialogueIsPlaying{get;private set;}
 
     public static DialogueManager instance;
@@ -74,7 +81,7 @@ public class DialogueManager : MonoBehaviour
         {
             return;
         }
-        if (InputManager.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
@@ -107,13 +114,45 @@ public class DialogueManager : MonoBehaviour
     {
         if(currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
+            if (displayLineCoroutine != null)
+            {
+                StopCoroutine(displayLineCoroutine);
+            }
+            displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
             DisplayChoices();
             HandleTags(currentStory.currentTags);
         }else
         {
             ExitDialogueMode();
         }   
+    }
+
+    private IEnumerator DisplayLine(string line)
+    {
+        dialogueText.text = "";
+        HideChoices();
+        canContinueToNextLine = false;
+
+        foreach (char letter in line.ToCharArray())
+        {
+            if (InputManager.GetInstance().GetSubmitPressed())
+            {
+                dialogueText.text =line;
+                break;
+            }
+            dialogueText.text+=letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        DisplayChoices();
+        canContinueToNextLine = true;
+    }
+    private void HideChoices()
+    {
+        foreach (GameObject choiceButton in choices)
+        {
+            choiceButton.SetActive(false);
+        }
     }
     public void HandleTags(List<string> currentTags)
     {
@@ -181,6 +220,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void MakeChoice(int choiceIndex)
     {
-        currentStory.ChooseChoiceIndex(choiceIndex);
+        if (canContinueToNextLine)
+        {
+            currentStory.ChooseChoiceIndex(choiceIndex);    
+        }
+        
     }
 }
