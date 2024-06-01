@@ -25,6 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private Animator portraitAnimator;
     private Animator layoutAnimator;
+    public Animator animator;
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -45,6 +46,7 @@ public class DialogueManager : MonoBehaviour
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
     private const string END_TAG = "end";
+    private const string DEATH_TAG = "death";
     private void Awake()
     {
         if (instance != null)
@@ -181,6 +183,12 @@ public class DialogueManager : MonoBehaviour
                     if (tagValue == "true")
                     {
                         SceneManager.LoadScene("Level 2");
+                    }
+                    break;
+                case DEATH_TAG:
+                    if (tagValue == "true")
+                    {
+                        animator.SetBool("IsDead",true);
                     }
                     break;
                 default:

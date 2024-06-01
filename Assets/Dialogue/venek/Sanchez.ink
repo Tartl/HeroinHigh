@@ -7,7 +7,7 @@ Un cucumbero
 *[Tož nazdar]
 Vamos Vamos
 *[Jsi v česku tak mluv česky!!!!!!]
-Habla espanol perra
+Chcípni puta! #death:true
 
 == function random ==
 #speaker:Sanchez #portrait:sanchez_icon #layout:left
