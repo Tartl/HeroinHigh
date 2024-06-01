@@ -435,11 +435,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735bfd2d6cd6ef9418cd26bce9deb4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typingSpeed: 0.04
   loadGlobalsJSON: {fileID: 4900000, guid: d6bd7d71fbb480240b17e270dd483212, type: 3}
   dialoguePanel: {fileID: 1103511080}
   dialogueText: {fileID: 1604020679}
   displayNameText: {fileID: 309271235}
   portraitAnimator: {fileID: 1411609622}
+  animator: {fileID: 0}
   choices:
   - {fileID: 637029457}
   - {fileID: 1406862739}
@@ -1930,7 +1932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1485281499}
-  inkJSON: {fileID: 4900000, guid: 53854f89cf329884aa8d1ae3e8dd71b5, type: 3}
+  inkJSON: {fileID: 4900000, guid: a535fd9f9423dbd4898523b6740a2d1c, type: 3}
   rb: {fileID: 1730030710}
 --- !u!58 &847172954
 CircleCollider2D:
