@@ -1,5 +1,12 @@
 INCLUDE globals.ink
 ->main
 === main ===
-Co je? #speaker:Uklizecka #portrait:uklizecka_icon #layout:left
+Potřebuješ něco? #speaker:Uklizecka #portrait:uklizecka_icon #layout:left
+*[Ne]
+Tak mě nech uklízet
 ->END
+*[Jo]
+    A co?
+**[Ještě nevim]
+    Tak mě nech uklízet
+    ->END
