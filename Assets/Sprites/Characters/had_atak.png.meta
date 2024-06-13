@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb68e9593077eba47b3da375d242a174
+guid: f2423fc1a0f60f44a93b6744babddeb6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: had_0
+      name: had_atak_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1abd5a0861b9e4f4eba0e466ac6b5e2f
-      internalID: -204830713
+      spriteID: 34192fe10222549469e1d40a67ab3c7e
+      internalID: 2132531807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_1
+      name: had_atak_1
       rect:
         serializedVersion: 2
         x: 12
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9bb32e812f31194b8172d6d3d90c9f0
-      internalID: -1034440733
+      spriteID: 73cb72083c78bcd41a150cd98897fdc3
+      internalID: -1699645507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_2
+      name: had_atak_2
       rect:
         serializedVersion: 2
         x: 24
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a92452c274bb20b49938e0240926501a
-      internalID: 1913981304
+      spriteID: dece479fee49ad94ebf27dbb9f5bf275
+      internalID: 487789880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_3
+      name: had_atak_3
       rect:
         serializedVersion: 2
         x: 36
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2004fca825ffd794b8806cf926677867
-      internalID: -840271067
+      spriteID: 27df5d8fa67ae1b4ab24d2493721f72d
+      internalID: -1061021535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_4
+      name: had_atak_4
       rect:
         serializedVersion: 2
         x: 48
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beff0e7f38df7b547a968783df67bde1
-      internalID: 664401378
+      spriteID: 32e1f06fc04acbe4c89b26c6c1c3bc83
+      internalID: 475431803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_5
+      name: had_atak_5
       rect:
         serializedVersion: 2
         x: 60
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fca48bd6d37d704e993139b84b2329d
-      internalID: -883665601
+      spriteID: 9d3e1d81bdbcdeb448d1e4807276cd50
+      internalID: -1605623427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_6
+      name: had_atak_6
       rect:
         serializedVersion: 2
         x: 72
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: accb4c27b35502145a039e604e23c4c8
-      internalID: 213143012
+      spriteID: 1b5765d05ea6700419d2a53623ccef12
+      internalID: 2102822055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: had_7
+      name: had_atak_7
       rect:
         serializedVersion: 2
         x: 84
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d57529df0f86b664e8106328a1e7b10f
-      internalID: -989413275
+      spriteID: b5aaf5ed9ffdf3c4e966492250411054
+      internalID: 594641013
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      had_0: -204830713
-      had_1: -1034440733
-      had_2: 1913981304
-      had_3: -840271067
-      had_4: 664401378
-      had_5: -883665601
-      had_6: 213143012
-      had_7: -989413275
+      had_atak_0: 2132531807
+      had_atak_1: -1699645507
+      had_atak_2: 487789880
+      had_atak_3: -1061021535
+      had_atak_4: 475431803
+      had_atak_5: -1605623427
+      had_atak_6: 2102822055
+      had_atak_7: 594641013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

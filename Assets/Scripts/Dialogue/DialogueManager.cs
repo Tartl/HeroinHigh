@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private Animator portraitAnimator;
     private Animator layoutAnimator;
-    public Animator animator;
+    public Animator PlayerAnimator;
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -187,7 +187,9 @@ public class DialogueManager : MonoBehaviour
                 case DEATH_TAG:
                     if (tagValue == "true")
                     {
-                        animator.SetBool("IsDead",true);
+                        ExitDialogueMode();
+                        PlayerAnimator.SetBool("IsDead",true);
+                        GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>().SetBool("IsKilling",true);
                     }
                     break;
                 default:
