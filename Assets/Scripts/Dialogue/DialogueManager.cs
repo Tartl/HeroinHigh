@@ -121,7 +121,6 @@ public class DialogueManager : MonoBehaviour
                 StopCoroutine(displayLineCoroutine);
             }
             displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
-            DisplayChoices();
             HandleTags(currentStory.currentTags);
         }else
         {
