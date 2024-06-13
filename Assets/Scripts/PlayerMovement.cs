@@ -15,22 +15,33 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerControls playerControls;
     private InputAction move;
+
     private void Awake()
     {
         playerControls = new PlayerControls();
     }
+
     private void OnEnable()
     {
         move = playerControls.Player.Move;
         move.Enable();
     }
+
     private void OnDisable()
     {
         move.Disable();
     }
+
     void Update()
     {
-        moveDirection = move.ReadValue<Vector2>();
+        if (!PauseMenu.isPaused)
+        {
+            moveDirection = move.ReadValue<Vector2>();
+        }
+        else
+        {
+            moveDirection = Vector2.zero;
+        }
     }
 
     private void FixedUpdate()
@@ -38,43 +49,50 @@ public class PlayerMovement : MonoBehaviour
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
             animator.SetFloat("SpeedX", 0);
-            animator.SetBool("MovingUp",false);
+            animator.SetBool("MovingUp", false);
             return;
         }
-        if (moveDirection.x < 0 && !m_FacingRight)
+
+        if (PauseMenu.isPaused)
         {
-            // ... flip the player.
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
+        if (moveDirection.x < 0 && m_FacingRight)
+        {
             Flip();
         }
-        // Otherwise if the input is moving the player left and the player is facing right...
-        else if (moveDirection.x > 0 && m_FacingRight)
+        else if (moveDirection.x > 0 && !m_FacingRight)
         {
-            // ... flip the player.
             Flip();
         }
-        if(moveDirection.y > 0 && moveDirection.x == 0)
+
+        if (moveDirection.y > 0 && moveDirection.x == 0)
         {
-            animator.SetBool("MovingUp",true);
+            animator.SetBool("MovingUp", true);
         }
         else
         {
-            animator.SetBool("MovingUp",false);
+            animator.SetBool("MovingUp", false);
         }
-        if(moveDirection.y < 0 && moveDirection.x == 0)
+
+        if (moveDirection.y < 0 && moveDirection.x == 0)
         {
-            animator.SetBool("MovingDown",true);
+            animator.SetBool("MovingDown", true);
         }
         else
         {
-            animator.SetBool("MovingDown",false);
+            animator.SetBool("MovingDown", false);
         }
-        animator.SetFloat("SpeedX",Math.Abs(moveDirection.x));
+
+        animator.SetFloat("SpeedX", Mathf.Abs(moveDirection.x));
         rb.velocity = new Vector2(moveDirection.x * runSpeed, moveDirection.y * runSpeed);
     }
+
     private void Flip()
     {
         m_FacingRight = !m_FacingRight;
-
-        transform.Rotate(0f, 180, 0f);
+        transform.Rotate(0f, 180f, 0f);
     }
 }
