@@ -73,7 +73,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -86,7 +86,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638494792583426089
+  platformSettingsDirtyTick: 638541714477825719
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: satny
+  - name: Background
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 1920
       height: 1080
-    spriteID: 891f41b280e191a4b9e4e29bca516527
+    spriteID: 4d5f80d9b1da82046b9623e2249aca26
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,23 +141,97 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Door
+    originalName: 
+    pivot: {x: 9.387755, y: -6.9923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1594
+      y: 1092
+      width: 98
+      height: 130
+    spriteID: 616b216dc9a8ca64caddc49654147493
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1594, y: 1092}
+  - name: Lockers
+    originalName: 
+    pivot: {x: 0.47408342, y: -1.8324175}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1582
+      height: 364
+    spriteID: 3602f441e561dbc428020f29e3d9dc27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1612024969
-    name: satny
-    layerFlags: 0
+    guid: -1021688250
+    name: Background
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: satny
+    - name: Background
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 1920
         height: 1080
-      spriteId: 891f41b280e191a4b9e4e29bca516527
+      spriteId: 4d5f80d9b1da82046b9623e2249aca26
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: -1909541105
+    name: Door
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Door
+      frameIndex: 0
+      cellRect:
+        x: 40
+        y: 909
+        width: 98
+        height: 130
+      spriteId: 616b216dc9a8ca64caddc49654147493
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: -147936259
+    name: Lockers
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Lockers
+      frameIndex: 0
+      cellRect:
+        x: 210
+        y: 667
+        width: 1582
+        height: 364
+      spriteId: 3602f441e561dbc428020f29e3d9dc27
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -186,6 +260,18 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
     overridden: 0
     ignorePlatformSupport: 0
     maxTextureSize: 2048

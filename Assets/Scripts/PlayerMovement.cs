@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 2f;
     private Vector2 moveDirection;
-    private bool m_FacingRight = true;
+    private bool m_FacingRight = false;
 
     public PlayerControls playerControls;
     private InputAction move;
