@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 44263454}
   - component: {fileID: 44263453}
   - component: {fileID: 44263452}
+  - component: {fileID: 44263455}
   m_Layer: 6
   m_Name: Sanchez
   m_TagString: NPC
@@ -256,6 +257,7 @@ Transform:
   m_Children:
   - {fileID: 792915962}
   - {fileID: 1494806567}
+  - {fileID: 766801186}
   m_Father: {fileID: 423767580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &44263452
@@ -366,6 +368,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &44263455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44263450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f776cf7ee358f944a5a736496fe9ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  had: {fileID: 2364044663099209693, guid: 1280f12d0af7340489cf61217b5b7f6d, type: 3}
+  firePoint: {fileID: 766801186}
 --- !u!1 &109542420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1192,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1604020679}
   displayNameText: {fileID: 309271235}
   portraitAnimator: {fileID: 1411609622}
-  animator: {fileID: 1730030713}
+  PlayerAnimator: {fileID: 1730030713}
   choices:
   - {fileID: 637029457}
   - {fileID: 1406862739}
@@ -3715,6 +3731,37 @@ Transform:
   - {fileID: 2044327506}
   - {fileID: 639823438}
   m_Father: {fileID: 490973492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &766801185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766801186}
+  m_Layer: 6
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766801186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766801185}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.227, y: -0.129, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 44263451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &792915961
 GameObject:

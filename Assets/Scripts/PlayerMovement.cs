@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         move.Enable();
     }
 
+
     private void OnDisable()
     {
         move.Disable();
