@@ -1,0 +1,260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 547e4078dcd69c7478b502f2037b9c79
+  m_SerializeEntries:
+  - m_GUID: 84cd8b0b03720a1498836a0011c6a60a
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM alenicvlastnepockej.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a91419d454103a640a7ec90fd788b585
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM blajsemcernejbla.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5c4d2ab294eddf4a9185b425ee54676
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM cosrek.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41ebdb84dc82267498df2d0d64dd4946
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM dikkonecnemuzuvzittokolo.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09c8cbe1713c52a4f8bd60c2dd2016e6
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG taktobezrasi.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39f293d756b17274f953a625f5ef5fc8
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG takstimtimuzupomoct.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 911bd513858df3941809040bf6ecce3d
+    m_Address: Assets/Sprites/Audio/Dabing/Pettigrew jsem zrzek.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f41dea3064baa6439bf0fa175c32b5a
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG zachvilkuzacnehodina.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 947255ef8a7a2fc4fa1962c264bd1d47
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG takcomastenkybl.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b7c75a8d65e3ec4e8ccc727c3f7a1f9
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG videljsemjaksesbavilsadamem.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 621e9e9d4d2c5fe4fbaf18f457e06b31
+    m_Address: Assets/Sprites/Audio/Dabing/Pettigrew kdyzjdestakdojdes.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 938b944cea32cbe4dbad4fa49bcf27db
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG stocilbychkyblnemas.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c8d36fca32df794b84a1a7fd7b406b1
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ droga.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0061450832578b040a259e50709735ee
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ chcipni puta.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d525bc8827303043b333fa6eec6a6e3
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ estono.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8159225d088158f47b32c14b7bf7058e
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ kara.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a5552c535c666b40b6e864819a35994
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO heheh.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69fc50e1315c05b498a9ea8008d147ff
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG pristeneplztvejmimcasem.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b991a924a6744b458141bed1b2b1e50
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM gadzoprocnamevubecmluvis.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3621a489b01239f41a67d9ee5dcbae61
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO smash.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97ba48d4cd8e52c409002e58bafc95cb
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO balls.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d6ab394395e89248997d6394896e7f6
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ los picos.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffe798997b5c54b45b7cf434d7ab7c09
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM stipacky.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5c9f6c730be033478b26bb22c135e41
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ bueno.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b289708add07bf84f8c722b6caad84ac
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ tacos.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e753d93bab81a242acec4b0b786581c
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM uzjsemreklvsechno.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: daf13f45d8e10c046ab6e32165a02e3e
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO povidla.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36d82606a47595343b91bc2c38305cbf
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO barbershop.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 037ecfd29856ba7409df6758e2620b2a
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM dikmore.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed3d22e6ecc665c4a9ec6216c742c8fe
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM dneskaprejneniveskole.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 859a01e092f7325459a8f9930ef0d954
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM donesmistipacky.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39ef527bc880acc42a4767742839e366
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM naval mi to more.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b029986e68d97714484655ab391db75b
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM tak co uz mas ty stipacky.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9889bde6516ce444fbd96e9935503cd3
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM takzetakmore.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8eee32baeacde8f4fa1da3d3435f658d
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM zamek.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 688f2fd6f719c6b4db92d35caf38d154
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO dejsicajscitronem.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db3bf8bef60bd96408be04bbb7c29f73
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO fifofifo.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba9a32438467b544abfd1ae5d595f523
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG dik.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a69eb6a7cf0811f4b904a7ba0095e57f
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG faktdikmoctadymas.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 927b057f34dd958468c0cab9d6640f86
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG fakdejmiho.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40c1ad82fb252fb4da0fbe650ccbd9d2
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG nemluv na me byznys.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cc2585c433fff84fa42a873d810db82
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG nebudhnedtakagresivni.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e670d78ca481b24e9f5d5a4fdd5f6e1
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG dikmoc.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 927c9d7d494d54040959dee59fb69020
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ receptnatacos.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e7702db5312dfe48af4c2b64d2eaa0e
+    m_Address: Assets/Sprites/Audio/Dabing/SNCHEZ hola.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 014abb704d5c8614bb5bb93ed36d6bf5
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ VAMOS VAMOS.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f36736a27d74c6d40a7c92028c3be84f
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ uncucumbero.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 47df8012a50411f40b90edbbfe765068, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fa9354d0b0bb94544ad1b8b0697d21b4, type: 2}
+    - {fileID: 11400000, guid: 50e61b5d6c91fc048a4bf283b53de89d, type: 2}

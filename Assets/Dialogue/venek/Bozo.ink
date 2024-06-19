@@ -3,9 +3,9 @@ INCLUDE globals.ink
 
 == function random ==
 ~borekHlasky++ 
-#speaker:Bozo #portrait:bozo_icon #layout:right
+#speaker:Bozo #portrait:bozo_icon #layout:right #audio:BOZO fifofifo.wav
 {shuffle:
- - ~ return "Dej si čaj s citrónem" 
+ - ~ return "Dej si čaj s citrónem"
  - ~ return "FIFO FIFO"
  - ~ return "Barbershop"
  - ~ return "SMASH!"

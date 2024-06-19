@@ -41,12 +41,13 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
 
     private DialogueVariables dialogueVariables;
-
+    public AudioPlayer audioPlayer;
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
     private const string END_TAG = "end";
     private const string DEATH_TAG = "death";
+    private const string AUDIO_TAG = "audio";
     private void Awake()
     {
         if (instance != null)
@@ -192,6 +193,9 @@ public class DialogueManager : MonoBehaviour
                         GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>().SetBool("IsKilling",true);
                     }
                     break;
+                case AUDIO_TAG:
+                    audioPlayer.PlayAudio("Assets/Sprites/Audio/Dabing/" + tagValue);
+                break;
                 default:
                     Debug.LogWarning("Tag came in, but is not currently being handled: " + tag);
                     break;

@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 {venekComplete:
-Už sem ti řek všechno co vim! #speaker:Adam #portrait:adam_icon #layout:right
+Už sem ti řek všechno co vim! #speaker:Adam #portrait:adam_icon #layout:right #audio:ADAM uzjsemreklvsechno
     ->END
 }
 {adamQuestComplete:
@@ -12,7 +12,7 @@ Už sem ti řek všechno co vim! #speaker:Adam #portrait:adam_icon #layout:right
     ->END
   - else: 
     {adamPrvni:
-    Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím... #speaker:Adam #portrait:adam_icon #layout:right
+    Nazdar more! Jestli nevim něco o tvejch vlasech? To jakože sem černej, tak sem ti je vzal? No dobře něco možná vím... #speaker:Adam #portrait:adam_icon #layout:right #audio:ADAM blajsemcernejbla.mp3
     }
     ~adamPrvni=false
     {adamQuestAccept:->accepted|->main}

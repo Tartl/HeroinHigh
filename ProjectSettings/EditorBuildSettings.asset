@@ -18,4 +18,5 @@ EditorBuildSettings:
     path: Assets/Scenes/EndScreen.unity
     guid: 7c24a84fbef9e034d99fcd9cd75af6b0
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 02e8e27f14ed06e4e849fdd4755af59e, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: a532ab0789a37794596831de155b1171, type: 2}
