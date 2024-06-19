@@ -1035,7 +1035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &256373167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1059,7 +1059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 489, y: 313.99997}
+  m_AnchoredPosition: {x: 900, y: 500}
   m_SizeDelta: {x: 978, y: 628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256373168
@@ -2213,7 +2213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 489.49997, y: 313.9999}
+  m_AnchoredPosition: {x: 900, y: 500}
   m_SizeDelta: {x: 979, y: 628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &489149553
@@ -5378,9 +5378,9 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 1
   m_TargetAudioSources:
-  - {fileID: 0}
+  - {fileID: 1352054527}
   m_DirectAudioVolumes:
   - 1
   m_Url: 
@@ -5975,7 +5975,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352054520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 4d3c519830048e14db50823d3d5b404d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -7956,6 +7956,7 @@ GameObject:
   - component: {fileID: 1730030712}
   - component: {fileID: 1730030713}
   - component: {fileID: 1730030714}
+  - component: {fileID: 1730030715}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -8170,6 +8171,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55181604d0d648242bedff6cf09d88d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1730030715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730030705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9f1106b7c44c04aab4c9fcac5f6a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maintheme: {fileID: 1352054527}
+  deathMenu: {fileID: 256373166}
 --- !u!1 &1771980029
 GameObject:
   m_ObjectHideFlags: 0

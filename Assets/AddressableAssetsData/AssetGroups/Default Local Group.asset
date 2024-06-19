@@ -17,16 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 547e4078dcd69c7478b502f2037b9c79
   m_SerializeEntries:
-  - m_GUID: 84cd8b0b03720a1498836a0011c6a60a
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM alenicvlastnepockej.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a91419d454103a640a7ec90fd788b585
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM blajsemcernejbla.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c5c4d2ab294eddf4a9185b425ee54676
     m_Address: Assets/Sprites/Audio/Dabing/ADAM cosrek.mp3
     m_ReadOnly: 0
@@ -97,68 +87,33 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8a5552c535c666b40b6e864819a35994
-    m_Address: Assets/Sprites/Audio/Dabing/BOZO heheh.mp3
+  - m_GUID: 4f7f8cfced47cde4cb8c8a3f16a4eef8
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO barbershop.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 69fc50e1315c05b498a9ea8008d147ff
-    m_Address: Assets/Sprites/Audio/Dabing/DOMIG pristeneplztvejmimcasem.mp3
+  - m_GUID: a98dba0dadcbd064184c4af5b49c4a14
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM blajsemcernejbla.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5b991a924a6744b458141bed1b2b1e50
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM gadzoprocnamevubecmluvis.mp3
+  - m_GUID: 612ac4b18c80de94aa14ed207c8bcdcd
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM gadzoprocnamevubecmluvis.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3621a489b01239f41a67d9ee5dcbae61
-    m_Address: Assets/Sprites/Audio/Dabing/BOZO smash.mp3
+  - m_GUID: 1a7a864534723784eae3148fda9eb730
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ los picos.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 97ba48d4cd8e52c409002e58bafc95cb
-    m_Address: Assets/Sprites/Audio/Dabing/BOZO balls.mp3
+  - m_GUID: 51477d0d7de7b71489cee3f8aeea5714
+    m_Address: Assets/Sprites/Audio/Dabing/DOMIG pristeneplztvejmimcasem.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2d6ab394395e89248997d6394896e7f6
-    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ los picos.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ffe798997b5c54b45b7cf434d7ab7c09
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM stipacky.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f5c9f6c730be033478b26bb22c135e41
-    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ bueno.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b289708add07bf84f8c722b6caad84ac
-    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ tacos.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3e753d93bab81a242acec4b0b786581c
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM uzjsemreklvsechno.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: daf13f45d8e10c046ab6e32165a02e3e
-    m_Address: Assets/Sprites/Audio/Dabing/BOZO povidla.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 36d82606a47595343b91bc2c38305cbf
-    m_Address: Assets/Sprites/Audio/Dabing/BOZO barbershop.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 037ecfd29856ba7409df6758e2620b2a
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM dikmore.mp3
+  - m_GUID: 9dd3143504a9ba843b656c4155429a8b
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO balls.wav
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -173,12 +128,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 39ef527bc880acc42a4767742839e366
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM naval mi to more.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b029986e68d97714484655ab391db75b
-    m_Address: Assets/Sprites/Audio/Dabing/ADAM tak co uz mas ty stipacky.mp3
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM navalmore.mp3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -249,6 +199,56 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f36736a27d74c6d40a7c92028c3be84f
     m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ uncucumbero.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12b2ff919719ef14c951d6c274eeeaf8
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ bueno.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71cbcbb6e74641a48b9345642949c972
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM stipacky.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb8fc886d9cd15c489e3c0cd1c6699d1
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM uzjsemreklvsechno.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d43fa83dc90de6b4cb9f4fc58a5da32f
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO smash.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff510e03275ea8645865bff0eb05dc24
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO povidla.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e601c67742391084d80c2651f8ca962d
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM dikmore.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: defe9f96accbaab478b762b132651693
+    m_Address: Assets/Sprites/Audio/Dabing/BOZO heheh.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df0c1325c1cefcd4ca25948083732eda
+    m_Address: Assets/Sprites/Audio/Dabing/SANCHEZ tacos.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6b05ef778529304d9125006f0cd3443
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM alenicvlastnepockej.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30315f58cf0152c408496c091de68600
+    m_Address: Assets/Sprites/Audio/Dabing/ADAM takcouzmastystipacky.mp3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
