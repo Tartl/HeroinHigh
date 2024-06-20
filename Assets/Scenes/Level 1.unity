@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 256373170}
   - component: {fileID: 256373169}
   - component: {fileID: 256373168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: deathMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1045,7 +1045,7 @@ RectTransform:
   m_GameObject: {fileID: 256373166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817154791}
@@ -1059,7 +1059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 900, y: 500}
+  m_AnchoredPosition: {x: 950, y: 550}
   m_SizeDelta: {x: 978, y: 628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256373168
@@ -1504,7 +1504,7 @@ GameObject:
   - component: {fileID: 356827754}
   - component: {fileID: 356827756}
   - component: {fileID: 356827755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,7 +1998,7 @@ GameObject:
   - component: {fileID: 451303528}
   - component: {fileID: 451303530}
   - component: {fileID: 451303529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 467000771}
   - component: {fileID: 467000770}
   - component: {fileID: 467000769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2201,7 +2201,7 @@ RectTransform:
   m_GameObject: {fileID: 467000768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1480963555}
@@ -2213,7 +2213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 900, y: 500}
+  m_AnchoredPosition: {x: 950, y: 550}
   m_SizeDelta: {x: 979, y: 628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &489149553
@@ -2226,7 +2226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 489149554}
   - component: {fileID: 489149555}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: vezen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,8 +2286,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -854506967
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c2ea0fabc1db3634984591cada300ccc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4723,7 +4723,7 @@ GameObject:
   - component: {fileID: 1173802992}
   - component: {fileID: 1173802994}
   - component: {fileID: 1173802993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5283,7 +5283,7 @@ GameObject:
   - component: {fileID: 1202299920}
   - component: {fileID: 1202299921}
   - component: {fileID: 1202299922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jakubc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5343,8 +5343,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -854506967
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8975bde97a49eb84a9452201f8a10eaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5615,7 +5615,7 @@ GameObject:
   - component: {fileID: 1333101523}
   - component: {fileID: 1333101525}
   - component: {fileID: 1333101524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6545,7 +6545,7 @@ GameObject:
   - component: {fileID: 1480963555}
   - component: {fileID: 1480963557}
   - component: {fileID: 1480963556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7023,7 +7023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581943748}
   - component: {fileID: 1581943749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "V\xFDst\u0159i\u017Eek"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7083,8 +7083,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -854506967
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5657d3cef77f83c41ac004a969c7b3a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7876,7 +7876,7 @@ GameObject:
   - component: {fileID: 1716588413}
   - component: {fileID: 1716588415}
   - component: {fileID: 1716588414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8271,7 +8271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778706715}
   - component: {fileID: 1778706716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Adam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8356,7 +8356,7 @@ GameObject:
   - component: {fileID: 1817154791}
   - component: {fileID: 1817154793}
   - component: {fileID: 1817154792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9022,7 +9022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2096320003}
   - component: {fileID: 2096320004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
