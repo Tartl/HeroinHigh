@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    private const bool V = true;
     [SerializeField] private AudioSource maintheme;
     public GameObject deathMenu;
     public IEnumerator Death()
     {
+        FindObjectOfType<PauseMenu>().isDead = true;
         maintheme.Stop();
         yield return new WaitForSeconds(2);
         Time.timeScale = 0f;

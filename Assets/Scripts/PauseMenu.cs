@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject deathMenu;
     public static bool isPaused;
+    public bool isDead;
 
     void Start()
     {
@@ -35,9 +37,13 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
-        if (isPaused && Input.GetKeyDown(KeyCode.M))
+        if ((isPaused || isDead) && Input.GetKeyDown(KeyCode.M))
         {
-            GoToMainMenu(); // Pokud je hra pozastavena a hráè stiskne M, vrátí se do hlavního menu
+            GoToMainMenu(); // Pokud je hra pozastavena a hrï¿½ï¿½ stiskne M, vrï¿½tï¿½ se do hlavnï¿½ho menu
+        }
+        if ((isPaused || isDead) && Input.GetKeyDown(KeyCode.N))
+        {
+            GotToActiveScene(); // Pokud je hra pozastavena a hrï¿½ï¿½ stiskne N, reset levelu
         }
     }
 
@@ -47,7 +53,7 @@ public class PauseMenu : MonoBehaviour
         if (pauseMenu != null)
         {
             pauseMenu.SetActive(true);
-            Time.timeScale = 0f; // Zastaví bìh hry
+            Time.timeScale = 0f; // Zastavï¿½ bï¿½h hry
             Debug.Log("Game paused");
         }
     }
@@ -58,14 +64,19 @@ public class PauseMenu : MonoBehaviour
         if (pauseMenu != null)
         {
             pauseMenu.SetActive(false);
-            Time.timeScale = 1f; // Obnoví bìh hry
+            Time.timeScale = 1f; // Obnovï¿½ bï¿½h hry
             Debug.Log("Game resumed");
         }
     }
 
     public void GoToMainMenu()
     {
-        Time.timeScale = 1f; // Nastaví èas na normální hodnotu (pokud byl náhodou pozastaven)
-        SceneManager.LoadScene("MejnMenu"); // Naète scénu s hlavním menu
+        Time.timeScale = 1f; // Nastavï¿½ ï¿½as na normï¿½lnï¿½ hodnotu (pokud byl nï¿½hodou pozastaven)
+        SceneManager.LoadScene("MejnMenu"); // Naï¿½te scï¿½nu s hlavnï¿½m menu
+    }
+    public void GotToActiveScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

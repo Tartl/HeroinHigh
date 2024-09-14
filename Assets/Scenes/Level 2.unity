@@ -988,6 +988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 506416992}
+  deathMenu: {fileID: 0}
+  isDead: 0
 --- !u!82 &363561875
 AudioSource:
   m_ObjectHideFlags: 0
@@ -998,11 +1000,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: da6399bc209026d48811aeec26e1fe8f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8c97c37536f385147b3263a7032e9e28, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f021e08ec6c784c41bf5700ac62c7eee, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1864,8 +1866,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1750856079
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7922865745594286487, guid: 92866dd33778e3f48a1a0ca938652675, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -5968,6 +5968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 467000768}
+  deathMenu: {fileID: 256373166}
+  isDead: 0
 --- !u!328 &1352054530
 VideoPlayer:
   m_ObjectHideFlags: 0
