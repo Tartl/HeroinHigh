@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public GameObject deathMenu;
     public static bool isPaused;
     public bool isDead;
+    public AudioSource audio;
 
     void Start()
     {
@@ -30,10 +30,12 @@ public class PauseMenu : MonoBehaviour
             if (isPaused)
             {
                 ResumeGame();
+                audio.Play();
             }
             else
             {
                 PauseGame();
+                audio.Stop();
             }
         }
 

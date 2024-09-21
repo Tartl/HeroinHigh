@@ -50,7 +50,7 @@ Viděl jsem, jak ses bavil s Adamem, nechtěl od tebe ten cigoš něco?#speaker:
 Stočil bych kýbl...Nemáš náhodou?#speaker:DomiG #portrait:domiG_icon #layout:left #audio:DOMIG stocilbychkyblnemas.mp3
 *[Mám]
     Fakt dík moc! Tady máš štípačky.#speaker:DomiG #portrait:domiG_iconvyhul #layout:left #audio:DOMIG faktdikmoctadymas.mp3
-    ~adamQuestComplete=true
+        ~adamQuestComplete=true
         ->END
 *[Nemám]
     Tak to běž radši za cigánem.#audio:DOMIG taktobezrasi.mp3

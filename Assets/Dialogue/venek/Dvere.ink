@@ -1,8 +1,8 @@
 INCLUDE globals.ink
-{adamQuestComplete:
+{venekComplete:
 Opravdu chceš jít dovnitř?#speaker:Dveře #portrait:dvere_icon #layout:right
 *[Jasně]
-Oki#end:true
+#end:true
 ->END
 *[Ani ne]
 ...

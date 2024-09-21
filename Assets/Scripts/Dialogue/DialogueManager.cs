@@ -182,7 +182,7 @@ public class DialogueManager : MonoBehaviour
                 case END_TAG:
                     if (tagValue == "true")
                     {
-                        SceneManager.LoadScene("Level 2");
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                     }
                     break;
                 case DEATH_TAG:
