@@ -52,7 +52,7 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame()
     {
         isPaused = true;
-        if (pauseMenu != null)
+        if (pauseMenu != null && !isDead)
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f; // Zastav� b�h hry
@@ -63,7 +63,7 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         isPaused = false;
-        if (pauseMenu != null)
+        if (pauseMenu != null && !isDead)
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1f; // Obnov� b�h hry
@@ -79,6 +79,6 @@ public class PauseMenu : MonoBehaviour
     public void GotToActiveScene()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
