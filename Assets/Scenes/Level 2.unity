@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.04
-  loadGlobalsJSON: {fileID: 4900000, guid: d6bd7d71fbb480240b17e270dd483212, type: 3}
+  loadGlobalsJSON: {fileID: 4900000, guid: 40a4513201b8c0b4aa6521d018a0262f, type: 3}
   dialoguePanel: {fileID: 1373242913}
   dialogueText: {fileID: 1090087853}
   displayNameText: {fileID: 1156370742}
@@ -2212,7 +2212,7 @@ SpriteRenderer:
   m_SortingLayerID: -1750856079
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8836033247807217607, guid: 92866dd33778e3f48a1a0ca938652675, type: 3}
+  m_Sprite: {fileID: -6362360891793010979, guid: 55b9a13d7e45de84182f498c13290500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5130,13 +5130,15 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -7.4846582, y: 7.2}
-  - {x: 8.323036, y: 7.2}
+  - {x: -7.4864388, y: 6.9862447}
+  - {x: -7.128603, y: 6.9949718}
+  - {x: 8.093183, y: 7.0005264}
+  - {x: 8.30243, y: 6.996432}
   - {x: 8.320714, y: 8.104891}
   - {x: -7.3330603, y: 8.093725}
   - {x: -7.3330603, y: 8.093725}
   - {x: -7.4658213, y: 7.9390917}
-  - {x: -7.4822826, y: 7.22}
+  - {x: -7.472408, y: 6.989539}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -5176,13 +5178,14 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -7.4049845, y: 9.478472}
-  - {x: -7.501663, y: 9.477397}
+  - {x: -7.3333073, y: 9.287333}
+  - {x: -7.5255556, y: 9.274312}
   - {x: -7.47649, y: 10.175075}
   - {x: -7.3697557, y: 10.291955}
   - {x: 8.320001, y: 10.337916}
-  - {x: 8.29964, y: 9.470937}
-  - {x: -7.385357, y: 9.476891}
+  - {x: 8.282719, y: 9.283264}
+  - {x: 8.1245985, y: 9.280675}
+  - {x: -7.3136797, y: 9.297698}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -5713,7 +5716,7 @@ Transform:
   m_GameObject: {fileID: 1741806919}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 3.72, z: 4.4593678}
+  m_LocalPosition: {x: 0.395, y: 3.67, z: 4.4593678}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5774,8 +5777,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0011133155}
-  m_Size: {x: 0.13000005, y: 0.24189126}
+  m_Offset: {x: 0, y: 0.015317857}
+  m_Size: {x: 0.13000005, y: 0.20902893}
   m_Direction: 0
 --- !u!212 &1741806923
 SpriteRenderer:

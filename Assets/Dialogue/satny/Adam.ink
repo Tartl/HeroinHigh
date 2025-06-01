@@ -1,29 +1,41 @@
 INCLUDE globals.ink
-->main
+{stipackyQuestComplete:
+    More nehaj ma už!
+    ->END
+}
+{stipackyQuestAccept:->accepted|->main}
+
+=== accepted ===
+Už jsi ji odlákal?
+*[Jo]
+OK, tady máš štípačky
+~stipackyQuestComplete=true
+->END
+*[Ne]
+->END
+
 === main ===
 Co je? #speaker:Adam #portrait:adam_icon #layout:right
-{stipacky_quest:
- {stipacky_complete:->complete}
--else:
     *[Máš ještě ty štípačky?]
         jj, proč?
         **[Zapomněl jsem si klíče od skříňky]
+            ~stipackyQuestAccept=true
             Tak mohl bych ti ty štípačky dát, ale zadara to nebude more!
-            ~stipacky_quest=true
+            ***[Dobře, co potřebuješ?]
+                Když odvedeš uklízečku někam bokem, kde neuvidí sem k téhle skříňce, tak ti je dám.
+                ****[Ok, zkusim to]
+                    Fakt? Tak dik more!
+                    ->END
+                ****[To neudělám]
+                    Tvoje rozhodnutí #death:true    
+                    ->END
+            ***[Vždyť jsem ti je sám před chvílí sehnal...]
+                No, a teď už sou moje!
             ->END
         **[Potřebuju k Batemanovi do skříňky]
             No tak to jo! Tos měl říct hned, tady máš!
-            ~stipacky_quest=true
-            ~stipacky_complete=true
+            ~stipackyQuestAccept=true
+            ~stipackyQuestComplete=true
             ->END
-}
-    *[Jak se máš?]
-        ...
-        ->main
-    *[Jdu pryč]
-        Gadžo proč na mě vůbec mluvíš?!
-        ->END
-
-===complete===
-GG
 ->END
+
