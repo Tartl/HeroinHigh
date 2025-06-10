@@ -1,2 +1,3 @@
 VAR stipackyQuestAccept=false
 VAR stipackyQuestComplete=false
+VAR satnyComplete=false
